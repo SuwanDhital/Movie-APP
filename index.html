@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <style>
+        /* General styling for the body */
+        body {
+            font-family: Comic Sans MS, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar styling */
+        #nav {
+            /* background-color: #4caf50; */
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        #searchbox {
+            display: inline-block;
+            width: 50%;
+        }
+
+        #textbox {
+            height: 40px;
+            width: 90%;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+        #searchbtn {
+            margin-left: 10px;
+        }
+
+        #searchButton {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #searchButton:hover {
+            background-color: #e64a19;
+        }
+
+        /* Main body styling */
+        #bodyPage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Main content container */
+        #mainContent {
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .containerBox {
+            margin-bottom: 20px;
+        }
+
+        /* Movie details section */
+        .detailbox {
+            text-align: left;
+            padding: 20px;
+            background-color: #e3f2fd;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2196f3;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        p b {
+            color: #ff5722;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div id="nav">
+        <div id="logo">
+            <img src="https://res.cloudinary.com/cloudnode/image/upload/v1738155338/logo_pejgwa.png" class="logo" alt="App Logo">
+        </div>
+        <div id="searchbox">
+            <input type="text" id="textbox" placeholder="   Search Movies" name="movie">
+        </div>
+        <div id="searchbtn">
+            <button id="searchButton">Search</button>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Main Page Content -->
+    <div id="bodyPage">
+        <div id="mainContent">
+
+            <!-- Movie Container -->
+            <div class="containerBox" id="containerBox">
+                <p><strong>Welcome to the Movie App!</strong></p>
+                <p>Search for your favorite movies and get details here.</p>
+                <img src="movie-poster-placeholder.png" alt="Movie Poster" style="width: 300px; border-radius: 10px;">
+            </div>
+
+            <!-- Movie Details -->
+            <div class="detailbox" id="detailbox">
+                <div id="name">Movie Title</div>
+                <hr>
+                <p><b>Type: </b><span id="type"></span></p>
+                <p><b>Genre: </b><span id="genre"></span></p>
+                <p><b>Released On: </b><span id="released"></span></p>
+                <p><b>Actors: </b><span id="actors"></span></p>
+                <p><b>Writer: </b><span id="Writer"></span></p>
+                <p><b>Director: </b><span id="director"></span></p>
+                <p><b>Awards: </b><span id="awards"></span></p>
+                <p><b>Country: </b><span id="country"></span></p>
+                <p><b>Language: </b><span id="language"></span></p>
+                <p><b>Rated: </b><span id="ratings"></span></p>
+                <p><b>Runtime: </b><span id="runtime"></span></p>
+                <p><b>Total Seasons: </b><span id="totalseasons"></span></p>
+                <p><b>Description: </b><span id="description"></span></p>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+
+</html>
