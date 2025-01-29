@@ -25,7 +25,7 @@ Ensure you have the following installed:
 ### Steps to Run the Project
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/movie-app.git
+   git clone https://github.com/SuwanDhital/movie-app.git
    cd movie-app
    ```
 2. **Setup Database**
